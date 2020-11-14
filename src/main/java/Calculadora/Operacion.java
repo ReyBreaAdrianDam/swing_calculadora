@@ -1,3 +1,4 @@
+package Calculadora;
 public enum Operacion {
     SUMA("+"),
     RESTA("-"),

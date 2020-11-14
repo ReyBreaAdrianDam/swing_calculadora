@@ -15,3 +15,11 @@ dependencies {
     implementation 'com.formdev:flatlaf:0.43'
     implementation 'com.formdev:flatlaf-intellij-themes:0.43'
 }
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'Calculadora.Main'
+        )
+    }
+}
